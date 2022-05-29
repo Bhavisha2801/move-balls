@@ -2,13 +2,21 @@
   text-align: center;
   display: grid;
   grid-template-columns: 50% 50%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   justify-content: center;
   align-items: center;
-  margin: 4%;
+  margin: 2%;
 }
+
+.heading{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #5a2b10;
+  background-color: aliceblue;
+}
+
 .App > .empty-container{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 350px;
   width: 80%;
   display: flex;
@@ -17,9 +25,11 @@
   gap: 3%;
   flex-wrap: wrap;
   padding: 20px;
+  box-shadow: grey 10px 10px 10px;
+  background-color: rgb(253, 248, 241);
 }
 .App > .balls-container{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 500px;
   width: 90%;
   display: flex;
@@ -27,6 +37,8 @@
   justify-content: center;
   align-items: center;
   gap: 5%;
+  box-shadow: grey 10px 10px 10px;
+  background-color: rgb(253, 248, 241);
 }
 .first , .second , .third, .fourth , .fifth{
   /* border: 1px solid black; */
@@ -61,13 +73,15 @@
 }
 
 .input-container{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   width: 15%;
   margin: auto;
   flex-direction: column;
   padding: 10px;
   margin-top: -1%;
+  box-shadow: grey 10px 10px 10px;
+  background-color: rgb(253, 248, 241);
 }
 
 .input-container > input{

@@ -47,24 +47,27 @@ const Balls = () => {
 
   return (
       <div>
+          <div>
+              <h1 className='heading'>Move Balls</h1>
+          </div>
         <div className='App'>
 
             <div className='empty-container'>
             {/* if store includes 1,2,3,4,5 then render it accordingly */}
-            {store.includes(1) ? <div className='first' onClick={() => popTheBall(1)}>1</div> : ""}
-            {store.includes(2) ? <div className='second' onClick={() => popTheBall(2)}>2</div> : ""}
-            {store.includes(3) ? <div className='third' onClick={() => popTheBall(3)}>3</div> : ""}
-            {store.includes(4) ? <div className='fourth' onClick={() => popTheBall(4)}>4</div> : ""}
-            {store.includes(5) ? <div className='fifth' onClick={() => popTheBall(5)}>5</div> : ""}
+            {store.includes(1) ? <div className='first' onClick={() => popTheBall(1)}></div> : ""}
+            {store.includes(2) ? <div className='second' onClick={() => popTheBall(2)}></div> : ""}
+            {store.includes(3) ? <div className='third' onClick={() => popTheBall(3)}></div> : ""}
+            {store.includes(4) ? <div className='fourth' onClick={() => popTheBall(4)}></div> : ""}
+            {store.includes(5) ? <div className='fifth' onClick={() => popTheBall(5)}></div> : ""}
             </div>
 
             <div className='balls-container'>
             {/* if arr includes 1,2,3,4,5 then render it accordingly */}
-            {!arr.includes(1) ? "" : <div className='first'>1</div>}
-            {!arr.includes(2) ? "" : <div className='second'>2</div>}
-            {!arr.includes(3) ? "" : <div className='third'>3</div>}
-            {!arr.includes(4) ? "" : <div className='fourth'>4</div>}
-            {!arr.includes(5) ? "" : <div className='fifth'>5</div>}
+            {!arr.includes(1) ? "" : <div className='first'></div>}
+            {!arr.includes(2) ? "" : <div className='second'></div>}
+            {!arr.includes(3) ? "" : <div className='third'></div>}
+            {!arr.includes(4) ? "" : <div className='fourth'></div>}
+            {!arr.includes(5) ? "" : <div className='fifth'></div>}
             </div>
         </div>
         <div className='input-container'>
