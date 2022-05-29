@@ -59,7 +59,7 @@ const Balls = () => {
             </div>
 
             <div className='balls-container'>
-            {/* if num == 1,2,3,4,5 then render it accordingly */}
+            {/* if arr includes 1,2,3,4,5 then render it accordingly */}
             {!arr.includes(1) ? "" : <div className='first'>1</div>}
             {!arr.includes(2) ? "" : <div className='second'>2</div>}
             {!arr.includes(3) ? "" : <div className='third'>3</div>}
