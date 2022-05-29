@@ -84,3 +84,7 @@
 .input-container > button:active {
   transform: translateY(3px);
 }
+
+button:disabled {
+    background: #dddddd;
+}

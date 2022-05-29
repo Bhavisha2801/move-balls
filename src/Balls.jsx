@@ -51,6 +51,9 @@ const Balls = () => {
         setNum(arr[index-1])
         setStore(state => [...state, arr[index-1]])
         setArr(arr.filter(item => item !== arr[index-1]))
+        if(index > arr.length ){
+            alert("Please Enter Valid Number")
+        }
     }
     
 
@@ -99,7 +102,7 @@ const Balls = () => {
         </div>
         <div className='input-container'>
           <input type="text" onChange={handleChange} value={index} />
-          <button onClick={handleClick}>Shoot</button>
+          { index === 0 ? <button onClick={handleClick} disabled>Shoot</button> : <button onClick={handleClick}>Shoot</button> }
         </div>
     </div>    
   )
