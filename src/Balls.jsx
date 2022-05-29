@@ -12,11 +12,32 @@ const Balls = () => {
 
     const [store , setStore] = useState([])
 
+    const [displayColor , setDisplayColor] = useState([])
+
+    const [ref , setRef] = useState(0)
+
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    
+
+    useEffect(() => {
+        for(let i=0 ; i<5 ; i++){
+            setDisplayColor(state => [...state,getRandomColor()])
+        }
+    },[ref])
+
+    console.log(displayColor)
+
     const handleChange = (e) => {
         setIndex(e.target.value)
     }
-
-    // console.log(arr[index])
 
     useEffect(() => {
     let str = arr
@@ -54,20 +75,21 @@ const Balls = () => {
 
             <div className='empty-container'>
             {/* if store includes 1,2,3,4,5 then render it accordingly */}
-            {store.includes(1) ? <div className='first' onClick={() => popTheBall(1)}></div> : ""}
-            {store.includes(2) ? <div className='second' onClick={() => popTheBall(2)}></div> : ""}
-            {store.includes(3) ? <div className='third' onClick={() => popTheBall(3)}></div> : ""}
-            {store.includes(4) ? <div className='fourth' onClick={() => popTheBall(4)}></div> : ""}
-            {store.includes(5) ? <div className='fifth' onClick={() => popTheBall(5)}></div> : ""}
+            {store.includes(1) ? <div style={{backgroundColor : displayColor[1]}} className='first' onClick={() => popTheBall(1)}></div> : ""}
+            {store.includes(2) ? <div style={{backgroundColor : displayColor[2]}} className='second' onClick={() => popTheBall(2)}></div> : ""}
+            {store.includes(3) ? <div style={{backgroundColor : displayColor[3]}} className='third' onClick={() => popTheBall(3)}></div> : ""}
+            {store.includes(4) ? <div style={{backgroundColor : displayColor[4]}} className='fourth' onClick={() => popTheBall(4)}></div> : ""}
+            {store.includes(5) ? <div style={{backgroundColor : displayColor[5]}} className='fifth' onClick={() => popTheBall(5)}></div> : ""}
             </div>
+
 
             <div className='balls-container'>
             {/* if arr includes 1,2,3,4,5 then render it accordingly */}
-            {!arr.includes(1) ? "" : <div className='first'></div>}
-            {!arr.includes(2) ? "" : <div className='second'></div>}
-            {!arr.includes(3) ? "" : <div className='third'></div>}
-            {!arr.includes(4) ? "" : <div className='fourth'></div>}
-            {!arr.includes(5) ? "" : <div className='fifth'></div>}
+            {!arr.includes(1) ? "" : <div style={{backgroundColor : displayColor[1]}} className='first'></div>}
+            {!arr.includes(2) ? "" : <div style={{backgroundColor : displayColor[2]}} className='second'></div>}
+            {!arr.includes(3) ? "" : <div style={{backgroundColor : displayColor[3]}} className='third'></div>}
+            {!arr.includes(4) ? "" : <div style={{backgroundColor : displayColor[4]}} className='fourth'></div>}
+            {!arr.includes(5) ? "" : <div style={{backgroundColor : displayColor[5]}} className='fifth'></div>}
             </div>
         </div>
         <div className='input-container'>
