@@ -1,38 +1,95 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > .empty-container{
+  border: 1px solid black;
+  height: 350px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  flex-wrap: wrap;
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App > .balls-container{
+  border: 1px solid black;
+  height: 500px;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 5%;
+}
+.first , .second , .third, .fourth , .fifth{
+  /* border: 1px solid black; */
+  width: 70px;
+  height: 80px;
+  border-radius: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.first{
+  background-color: rgb(212, 243, 166);
+  border: 2px solid rgb(132, 187, 51);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second{
+  background-color: antiquewhite;
+  border: 2px solid rgb(213, 174, 122);
+}
+
+.third{
+  background-color: rgb(241, 197, 248);
+  border: 2px solid rgb(217, 52, 229);
+}
+
+.fourth{
+  background-color: skyblue;
+  border: 2px solid rgb(52, 174, 222);
+}
+
+.fifth{
+  background-color: rgb(197, 197, 245);
+  border: 2px solid rgb(146, 146, 243);
+}
+
+.input-container{
+  border: 1px solid black;
+  display: flex;
+  width: 15%;
+  margin: auto;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: -1%;
+}
+
+.input-container > input{
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  font-size: large;
+  /* border-style:ridge; */
+  border: 2px ridge black;
+}
+
+.input-container > button{
+  background-color:#7a3005;
+  height: 50px;
+  border: none;
+  box-shadow: grey 10px 10px 10px;
+  border-radius: 5%;
+  cursor: pointer;
+  color: rgb(215, 233, 249);
+  font-size: large;
+}
+
+.input-container > button:active {
+  transform: translateY(3px);
 }
