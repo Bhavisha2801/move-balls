@@ -19,7 +19,7 @@ const Balls = () => {
     // console.log(arr[index])
 
     useEffect(() => {
-        let str = arr
+    let str = arr
     console.log(str)
     str.sort((a,b) => a-b)
     console.log(str)
