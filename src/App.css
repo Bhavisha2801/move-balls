@@ -40,37 +40,14 @@
   box-shadow: grey 10px 10px 10px;
   background-color: rgb(253, 248, 241);
 }
-.first , .second , .third, .fourth , .fifth{
+.ball{
   /* border: 1px solid black; */
   width: 70px;
   height: 80px;
   border-radius: 100%;
+  border: 2px solid rgb(224, 236, 205);
 }
 
-.first{
-  background-color: rgb(212, 243, 166);
-  border: 2px solid rgb(132, 187, 51);
-}
-
-.second{
-  background-color: antiquewhite;
-  border: 2px solid rgb(213, 174, 122);
-}
-
-.third{
-  background-color: rgb(241, 197, 248);
-  border: 2px solid rgb(217, 52, 229);
-}
-
-.fourth{
-  background-color: skyblue;
-  border: 2px solid rgb(52, 174, 222);
-}
-
-.fifth{
-  background-color: rgb(197, 197, 245);
-  border: 2px solid rgb(146, 146, 243);
-}
 
 .input-container{
   /* border: 1px solid black; */

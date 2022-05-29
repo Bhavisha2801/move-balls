@@ -25,10 +25,10 @@ const Balls = () => {
         }
         return color;
     }
-    
+
 
     useEffect(() => {
-        for(let i=0 ; i<5 ; i++){
+        for(let i=0 ; i<3 ; i++){
             setDisplayColor(state => [...state,getRandomColor()])
         }
     },[ref])
@@ -64,6 +64,11 @@ const Balls = () => {
         setArr(state => [...state , numToBeRemoved])
     }
 
+    const firstBallColor = {backgroundColor : displayColor[0]}
+    const secondBallColor = {backgroundColor : displayColor[1]}
+    const thirdBallColor = {backgroundColor : displayColor[2]}
+    const fourthBallColor = {backgroundColor : displayColor[3]}
+    const fifthBallColor = {backgroundColor : displayColor[4]}
 
 
   return (
@@ -75,21 +80,21 @@ const Balls = () => {
 
             <div className='empty-container'>
             {/* if store includes 1,2,3,4,5 then render it accordingly */}
-            {store.includes(1) ? <div style={{backgroundColor : displayColor[1]}} className='first' onClick={() => popTheBall(1)}></div> : ""}
-            {store.includes(2) ? <div style={{backgroundColor : displayColor[2]}} className='second' onClick={() => popTheBall(2)}></div> : ""}
-            {store.includes(3) ? <div style={{backgroundColor : displayColor[3]}} className='third' onClick={() => popTheBall(3)}></div> : ""}
-            {store.includes(4) ? <div style={{backgroundColor : displayColor[4]}} className='fourth' onClick={() => popTheBall(4)}></div> : ""}
-            {store.includes(5) ? <div style={{backgroundColor : displayColor[5]}} className='fifth' onClick={() => popTheBall(5)}></div> : ""}
+            {store.includes(1) ? <div style={firstBallColor} className='ball' onClick={() => popTheBall(1)}></div> : ""}
+            {store.includes(2) ? <div style={secondBallColor} className='ball' onClick={() => popTheBall(2)}></div> : ""}
+            {store.includes(3) ? <div style={thirdBallColor} className='ball' onClick={() => popTheBall(3)}></div> : ""}
+            {store.includes(4) ? <div style={fourthBallColor} className='ball' onClick={() => popTheBall(4)}></div> : ""}
+            {store.includes(5) ? <div style={fifthBallColor} className='ball' onClick={() => popTheBall(5)}></div> : ""}
             </div>
 
 
             <div className='balls-container'>
             {/* if arr includes 1,2,3,4,5 then render it accordingly */}
-            {!arr.includes(1) ? "" : <div style={{backgroundColor : displayColor[1]}} className='first'></div>}
-            {!arr.includes(2) ? "" : <div style={{backgroundColor : displayColor[2]}} className='second'></div>}
-            {!arr.includes(3) ? "" : <div style={{backgroundColor : displayColor[3]}} className='third'></div>}
-            {!arr.includes(4) ? "" : <div style={{backgroundColor : displayColor[4]}} className='fourth'></div>}
-            {!arr.includes(5) ? "" : <div style={{backgroundColor : displayColor[5]}} className='fifth'></div>}
+            {!arr.includes(1) ? "" : <div style={firstBallColor} className='ball'></div>}
+            {!arr.includes(2) ? "" : <div style={secondBallColor} className='ball'></div>}
+            {!arr.includes(3) ? "" : <div style={thirdBallColor} className='ball'></div>}
+            {!arr.includes(4) ? "" : <div style={fourthBallColor} className='ball'></div>}
+            {!arr.includes(5) ? "" : <div style={fifthBallColor} className='ball'></div>}
             </div>
         </div>
         <div className='input-container'>
