@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Move Ball Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<a target="_blank" href="[https://move-balls.vercel.app/" ><img src="https://user-images.githubusercontent.com/96948878/170866539-8415553e-39e4-4b88-8fb5-2acdcf070120.png" width="600" height="400" width="600" height="400"></a>
 
-In the project directory, you can run:
+### About Move Balls
 
-### `npm start`
+<ul>
+  <li>When user will visit move-balls website , he/she can find the empty container and one container filled with 
+    balls with randomly generated colored balls and one input box and one button to shoot balls</li>
+  <li>User can enter numbers according to that that which ball he/she wants to go (Initially Shoot button will be disabled bcoz 0 is not a considerable position as per our website)</li>
+  <li>After shoot balls it'll be visible into the empty container</li>
+  <li>User can click on any ball and ball will be back to its original position into container filled with balls</li>
+  <li>If the entered number is greater then the number of balls then it will be considered as invalid</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Step 1`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://user-images.githubusercontent.com/96948878/170866539-8415553e-39e4-4b88-8fb5-2acdcf070120.png" width="600" height="400">
 
-### `npm test`
+### `Step 2`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://user-images.githubusercontent.com/96948878/170866661-2006eb20-6d1b-4013-a30a-6e4a4caa03a1.png" width="550" height="400">
 
-### `npm run build`
+### `Step 3`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://user-images.githubusercontent.com/96948878/170866789-97aaa87e-b0bd-4de9-8521-27d7e9cbc773.png" width="600" height="400">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Step 4`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://user-images.githubusercontent.com/96948878/170866936-5c06fc22-6122-4de5-b153-ddd1fbe2bca5.png" width="600" height="400">
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
